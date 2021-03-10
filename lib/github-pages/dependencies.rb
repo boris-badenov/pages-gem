@@ -6,6 +6,8 @@ module GitHubPages
   # corresponding version to which it shall be locked in the runtime dependencies.
   class Dependencies
     VERSIONS = {
+      # Jekyll
+      "jekyll" => "3.9.0",
       # Converters
       "kramdown" => "2.3.0",
       "kramdown-parser-gfm" => "1.1.0",
