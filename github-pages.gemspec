@@ -20,11 +20,15 @@ Gem::Specification.new do |s|
   s.files                 = all_files.grep(%r{^(bin|lib)/|^.rubocop.yml$})
   s.executables           = all_files.grep(%r{^bin/}) { |f| File.basename(f) }
 
+  # Jekyll  
+  s.add_dependency("jekyll", "~> 4.2.0")
+  s.add_dependency("ekyll-sass-converter", "~> 2.0")  
+  
   GitHubPages::Dependencies.gems.each do |gem, version|
     s.add_dependency(gem, "= #{version}")
   end
 
-  s.add_dependency("mercenary", "~> 0.3")
+  s.add_dependency("mercenary", "~> 0.3")  
   s.add_dependency("nokogiri", ">= 1.10.4", "< 2.0")
   s.add_dependency("terminal-table", "~> 2.0")
   s.add_development_dependency("jekyll_test_plugin_malicious", "~> 0.2")
