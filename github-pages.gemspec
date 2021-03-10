@@ -22,7 +22,7 @@ Gem::Specification.new do |s|
 
   # Jekyll  
   s.add_dependency("jekyll", "~> 4.2.0")
-  s.add_dependency("ekyll-sass-converter", "~> 2.0")  
+  s.add_dependency("jekyll-sass-converter", "~> 2.0")  
   
   GitHubPages::Dependencies.gems.each do |gem, version|
     s.add_dependency(gem, "= #{version}")
