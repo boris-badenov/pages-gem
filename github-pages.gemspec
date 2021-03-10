@@ -21,7 +21,6 @@ Gem::Specification.new do |s|
   s.executables           = all_files.grep(%r{^bin/}) { |f| File.basename(f) }
 
   # Jekyll  
-  s.add_dependency("jekyll", "~> 4.2.0")
   s.add_dependency("jekyll-sass-converter", "~> 2.0")  
   
   GitHubPages::Dependencies.gems.each do |gem, version|
